@@ -24,19 +24,22 @@ function CarItem({ car }) {
             <div className='p-4 flex-grow'> {/* This will stretch to fill remaining space */}
                 <h2 className='font-bold text-black text-lg mb-2'>{car?.listingTitle}</h2>
                 <Separator />
-                <div className='grid grid-cols-3 mt-5'>
+                <div className='grid grid-cols-3 mt-4'>
+
                     <div className='flex flex-col items-center'>
-                        < SiSpeedtest className='text-lg mb-2' />
-                        <h2>{car?.mileage} Mileage</h2>
+                        <SiSpeedtest className='text-lg mb-2 items-center' />
+                        <h2 className='text-center'>{car?.mileage} Mileage</h2>
                     </div>
+
                     <div className='flex flex-col items-center'>
                         < LuFuel className='text-lg mb-2' />
-                        <h2>{car?.fuelType}</h2>
+                        <h2 className='text-center'>{car?.fuelType}</h2>
                     </div>
                     <div className='flex flex-col items-center'>
                         <GiGearStick className='text-lg mb-2' />
-                        <h2>{car?.transmission}</h2>
+                        <h2 className='text-center'>{car?.transmission}</h2>
                     </div>
+
                 </div>
                 <Separator className='my-2' />
                 <div className='flex items-center justify-between mt-5'>
