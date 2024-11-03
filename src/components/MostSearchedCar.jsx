@@ -32,10 +32,10 @@ function MostSearchedCar() {
   };
 
   return (
-    <div className='mx-5 md:mx-20'>
+    <div className='mx-5 md:mx-20 overflow-hidden'>
       <h2 className='font-bold text-3xl text-center mt-16 mb-7'>Popular Picks</h2>
-      <Carousel>
-        <CarouselContent>
+      <Carousel className="max-h-screen">
+        <CarouselContent className="flex flex-wrap max-h-full overflow-hidden">
           {carList.map((car, index) => (
             <CarouselItem key={index} className='basis-full md:basis-1/4 lg:basis-1/4'>
               <CarItem car={car} />
