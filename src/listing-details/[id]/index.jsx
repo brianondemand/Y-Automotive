@@ -16,7 +16,7 @@ import Specification from '../components/Specification';
 import Footer from '@/components/Footer';
 import { Separator } from '@/components/ui/separator';
 import OwnerDetails from '../components/OwnerDetails';
-import OtherOptions from '../components/OtherOptions';
+import MostSearchedCar from '@/components/MostSearchedCar';
 
 function ListingDetail() {
 
@@ -76,10 +76,8 @@ function ListingDetail() {
                 </div>
             </div>
             <Separator className='mt-10' />
-            {/* Other Cars Options */}
-            <OtherOptions />
         </div>
-        <Separator />
+        <MostSearchedCar />
         <Footer />
     </div>
   )
