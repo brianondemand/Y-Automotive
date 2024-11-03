@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import FakeData from '@/shared/FakeData';
 import React, { useEffect, useState } from 'react';
 import CarItem from './CarItem';
 import {
@@ -34,10 +33,13 @@ function MostSearchedCar() {
   return (
     <div className='mx-5 md:mx-20 overflow-hidden'>
       <h2 className='font-bold text-3xl text-center mt-16 mb-7'>Popular Picks</h2>
-      <Carousel className="max-h-screen">
-        <CarouselContent className="flex flex-wrap max-h-full overflow-hidden">
+      <Carousel>
+        <CarouselContent className='flex'>
           {carList.map((car, index) => (
-            <CarouselItem key={index} className='basis-full md:basis-1/4 lg:basis-1/4'>
+            <CarouselItem 
+              key={index} 
+              className='basis-full md:basis-1/4 lg:basis-1/4 flex-shrink-0'
+            >
               <CarItem car={car} />
             </CarouselItem>
           ))}
