@@ -6,10 +6,10 @@ import CarSpecification from '@/shared/CarSpecification'
 import React from 'react'
 
 function Specification({ carDetail }) {
-    console.log(carDetail);
+    //console.log(carDetail);
     
     return (
-        <div className='p-10 rounded-xl border shadow-md mt-7'>
+        <div className='mt-10 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700'>
             <h2 className='font-medium text-2xl'>Specifications</h2>
             {carDetail?CarSpecification.map((item, index) => (
                 <div className='mt-5 flex items-center justify-between'>

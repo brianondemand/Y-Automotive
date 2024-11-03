@@ -80,7 +80,7 @@ function AddListing() {
                 postedOn: moment().format('DD/MMM/yyyy'),
             }).where(eq(CarListing.id, recordId)).returning({ id: CarListing.id });
 
-            console.log(result);
+            //console.log(result);
             navigate('/profile');
             setLoader(false);
         } else {

@@ -13,7 +13,7 @@ import CarItem from '@/components/CarItem';
 function SearchByCategory() {
     const {category}=useParams();
     const [carList, setCarList] = useState()
-    console.log(category);
+    //console.log(category);
 
     useEffect(() => {
       GetCarList();    
